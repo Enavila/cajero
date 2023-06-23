@@ -11,7 +11,7 @@ let porsentaje;
 function saldo(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
 };
-function comicion(a) {
+function comision(a) {
     return a * 0.05
 }
 alert("Bienvenidos al cajero automatico de RoxBanco, tu Banco de confianza.");
@@ -28,7 +28,7 @@ if (cedula <= 999999) {
         2: Realizar retiros.
         3: Realizar depositos.
         4: Realizar transferencia a otra cuenta.
-        5: Pago movil
+        5: Pago movil.
         Otro: cerrar el cajero.
         `)
         switch(operaciones){
@@ -95,10 +95,10 @@ if (cedula <= 999999) {
         montoPagoM = prompt("Ingrese el monto a transferir");
         alert(`Codigo digital de un solo uso: ${saldo(1000, 9999)}`)
         prompt(`Ingrese el codigo digital de un solo uso`)
-        porsentaje = comicion(montoPagoM);
+        porsentaje = comision(montoPagoM);
         if ((saldoActual - montoPagoM - porsentaje) >= 0) {
             saldoActual = saldoActual - montoPagoM - porsentaje;
-            alert(`Se realizado un pago de ${montoPagoM}$, al titular de la cedula ${cedualaDestinatario}, con una comicion de: ${porsentaje}$ tu saldo actual es: ${saldoActual}$`);
+            alert(`Se realizado un pago de ${montoPagoM}$, al titular de la cedula ${cedualaDestinatario}, con una comision de: ${porsentaje}$ tu saldo actual es: ${saldoActual}$`);
         }else{
             alert("Fondos insuficientes");
         }
