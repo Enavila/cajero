@@ -14,13 +14,13 @@ function saldo(min, max) {
 function comicion(a) {
     return a * 0.05
 }
-alert("Bienbenidos al cajero automatico de RoxBanco, tu Banco de confianza.");
+alert("Bienvenidos al cajero automatico de RoxBanco, tu Banco de confianza.");
 let cedula = prompt(`Ingrsese su numero de cedula:`);
 if (cedula <= 999999) {
     alert("cedula no encontrada")
 }else{
     let pin = prompt(`Ingresu su Pin`);
-    alert(`Bienbenido Usuario ${cedula}`);
+    alert(`Bienvenido Usuario ${cedula}`);
     menu()
     function menu() {
         operaciones = prompt(`Que operacion va a realizar:
